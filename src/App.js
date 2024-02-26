@@ -2,23 +2,22 @@ import "./App.css";
 import Employee from "./components/Employee";
 
 function App() {
+  console.log("Hi this the trail project for leraning");
+  const showEmployees = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <Employee />
-        <Employee />
-        <Employee />
-        <Employee />
-        <Employee />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          New Testing
-        </a>
-      </header>
+      {console.log("Hi test leraning")}
+      {showEmployees ? (
+        <>
+          <Employee activity="Singing" role="engineer" />
+          <Employee />
+          <Employee />
+          <Employee />
+          <Employee />
+        </>
+      ) : (
+        <p>You cannot see the employee</p>
+      )}
     </div>
   );
 }
