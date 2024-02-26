@@ -6,6 +6,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Employee />
+        <Employee />
+        <Employee />
+        <Employee />
+        <Employee />
         <a
           className="App-link"
           href="https://reactjs.org"
